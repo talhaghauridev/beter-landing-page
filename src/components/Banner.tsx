@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { LiaDownloadSolid } from "react-icons/lia";
-import bannerInfo1 from "../../assets/Images/banner_info_1.jpg";
-import bannerInfo2 from "../../assets/Images/banner_info_2.jpg";
-import bannerInfo3 from "../../assets/Images/banner_info_3.jpg";
+import bannerInfo1 from "../assets/Images/banner_info_1.jpg";
+import bannerInfo2 from "../assets/Images/banner_info_2.jpg";
+import bannerInfo3 from "../assets/Images/banner_info_3.jpg";
 import { FaChevronRight } from "react-icons/fa";
 
 const Banner = () => {

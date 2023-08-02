@@ -11,15 +11,15 @@
 
 @font-face {
   font-family: "Space_Grotesk";
-  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Bold.otf");
+  src: url("./assets/Fonts/space-grotesk-cufonfonts/SpaceGrotesk-Bold.otf");
 }
 @font-face {
   font-family: "Space_Grotesk medium";
-  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Medium.otf");
+  src: url("./assets/Fonts/space-grotesk-cufonfonts/SpaceGrotesk-Medium.otf");
 }
 @font-face {
   font-family: "Space_Grotesk light";
-  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Light.otf");
+  src: url("./assets/Fonts/space-grotesk-cufonfonts/SpaceGrotesk-Light.otf");
 }
 .font-medium {
   font-family: "Space_Grotesk medium";
