@@ -3,13 +3,11 @@ import Home from "./pages/home";
 
 const App = () => {
   return (
-    <>
-      <div id="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </>
+    <div id="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
   );
 };
 
