@@ -26,7 +26,7 @@ const Navigation = () => {
             ${bars ? "top-[0]" : "top-[-50vh] "}
               
             right-0 h-[50vh] flex-col px-[15px] bg-black md:relative md:top-0 md:items-center md:flex-row md:bg-transparent
-            md:h-auto md:px-0 md:top-0 rounded-br-[28px] rounded-bl-[28px] md:justify-end`}
+            md:h-auto md:px-0 rounded-br-[28px] rounded-bl-[28px] md:justify-end`}
             >
               {navgation?.map((nav) => (
                 <>
@@ -43,7 +43,7 @@ const Navigation = () => {
             <div className="navigation_button flex flex-row w-full justify-between max-w-fit items-center ">
               <Link
                 to={"#"}
-                className="rounded-[30px] bg-[white]  flex gap-[5px]  py-[0.6em] md:py-[0.7em]  px-[0.7em] shadow-lg text-[15px] md:text-[16px] gap-[10px] font-light"
+                className="rounded-[30px] bg-[white]  flex   py-[0.6em] md:py-[0.7em]  px-[0.7em] shadow-lg text-[15px] md:text-[16px] gap-[10px] font-light"
               >
                 <span className="btn_icon mr-2 flex items-center justify-center">
                   <LiaDownloadSolid />
@@ -53,7 +53,7 @@ const Navigation = () => {
             </div>
 
             <div
-              className="md:hidden w-full max-w-[50px] flex items-center justify-center px-[8px] flex cursor-pointer  "
+              className="md:hidden w-full max-w-[50px]  items-center justify-center px-[8px] flex cursor-pointer  "
               onClick={() => {
                 setBars(!bars);
               }}

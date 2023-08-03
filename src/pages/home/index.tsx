@@ -3,12 +3,10 @@ import Navigation from "../../components/Navigation";
 
 const Home = () => {
   return (
-    <>
-      <main id="home" className="relative overflow-hidden backgro"  >
-        <Navigation />
-        <Banner />
-      </main>
-    </>
+    <main id="home" className="relative overflow-hidden backgro"  >
+      <Navigation />
+      <Banner />
+    </main>
   );
 };
 

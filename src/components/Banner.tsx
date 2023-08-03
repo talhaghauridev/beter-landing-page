@@ -12,7 +12,6 @@ const Banner = () => {
         <div className="noise"></div>
       </div>
       <section id="banner">
-        {/* <div className="banner_bc"></div> */}
 
         <div className="max-w-[1250px] m-auto py-[35px] px-[15px] w-[100%] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[30px] items-center">
           <div className="banner_info flex flex-col gap-[40px]  items-center justify-start  w-full  ">
@@ -22,7 +21,7 @@ const Banner = () => {
               </h1>
             </div>
             <div className="banner_des w-[100%]">
-              <p className="leading-[1.5em] text-white font-Space_Grotesk text-[1.2em] text-center md:text-start md:max-w-[450px] font-[100] font-medium">
+              <p className="leading-[1.5em] text-white font-Space_Grotesk text-[1.2em] text-center md:text-start md:max-w-[450px] font-medium">
                 Discover unlimited variations of yourself and create unique
                 avatars. Convert yourself into any character or be in any place.
               </p>
@@ -31,7 +30,7 @@ const Banner = () => {
             <div className="banner_buttons flex flex-row w-full justify-evenly md:justify-start gap-4">
               <Link
                 to={"#"}
-                className="rounded-[30px] bg-[black] font-Space_Grotesk flex gap-[5px] py-[0.9em] px-[1.2em]  text-white shadow-lg text-[15px] md:text-[16px] gap-[10px]"
+                className="rounded-[30px] bg-[black] font-Space_Grotesk flex  py-[0.9em] px-[1.2em]  text-white shadow-lg text-[15px] md:text-[16px] gap-[10px]"
               >
                 <span className="btn_icon flex items-center justify-center">
                   <LiaDownloadSolid className="text-white" />
@@ -41,7 +40,7 @@ const Banner = () => {
 
               <Link
                 to={"#"}
-                className="rounded-[30px] bg-[#1616130a] backdrop-blur-[40px] font-Space_Grotesk flex gap-[5px]  shadow-lg text-[15px] md:text-[16px] gap-[10px] h-fit items-center pr-[20px] text-[#161613]"
+                className="rounded-[30px] bg-[#1616130a] backdrop-blur-[40px] font-Space_Grotesk flex  shadow-lg text-[15px] md:text-[16px] gap-[10px] h-fit items-center pr-[20px] text-[#161613]"
               >
                 <span className="btn_icon flex items-center justify-center rounded-full bg-white px-[18px] py-[18px]">
                   <FaChevronRight />
