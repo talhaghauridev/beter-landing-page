@@ -1,0 +1,254 @@
+/* import */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* section {
+  position: relative;
+  overflow: hidden;
+} */
+
+@font-face {
+  font-family: "Space_Grotesk";
+  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Bold.otf");
+}
+@font-face {
+  font-family: "Space_Grotesk medium";
+  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Medium.otf");
+}
+@font-face {
+  font-family: "Space_Grotesk light";
+  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Light.otf");
+}
+.font-medium {
+  font-family: "Space_Grotesk medium";
+}
+.font-light {
+  font-family: "Space_Grotesk light";
+}
+#app {
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/Images/body_bc.png"),
+    linear-gradient(#f8f7f3, #f8f7f3);
+  background-position: 0 0, 0 0;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.banner_bc {
+  /* background-image: url("/src/assets/Images/background_1.jpg"),
+    url("/src/assets/Images/background_2.jpg");
+  z-index: -10;
+  height: 92em;
+  mix-blend-mode: darken;
+  background-color: #f8f7f3;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: scroll, scroll;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%; */
+}
+
+#banner {
+  height: 100vh;
+  position: relative;
+  z-index: 12;
+}
+.noise {
+  opacity: 0.7;
+  mix-blend-mode: soft-light;
+  background-image: url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448ee67738b3ea56e15b577_noise.png");
+  background-position: 0 0;
+  background-size: auto;
+  background-attachment: scroll;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.banner_bc::after {
+  content: "";
+  background: url("/src/assets/Images/background_1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -2;
+  background-size: auto;
+  height: 100%;
+}
+.banner_bc::before {
+  content: "";
+  background: url("/src/assets/Images/background_2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background-size: auto;
+  height: 100%;
+}
+
+.banner_info_image {
+  position: relative;
+  will-change: transform;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(-2.83444deg)
+    rotateY(5.9143deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  max-width: 20em;
+  position: relative;
+  perspective: 1800px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 2.5s ease-out;
+  right: -130px;
+}
+
+.banner_info_image:hover {
+  will-change: transform;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(-4.96678deg)
+    rotateY(5.68638deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.banner_info_image:hover .banner_img_1 {
+  will-change: transform;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
+    rotateY(-22.9972deg) rotateZ(15.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.banner_info_image:hover .banner_img_2 {
+  will-change: transform;
+  transform: translate3d(0px, -30px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
+    rotateY(-22.9972deg) rotateZ(15.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.banner_info_image:hover .banner_img_3 {
+  will-change: transform;
+  transform: translate3d(0px, -30px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
+    rotateY(-22.9972deg) rotateZ(15.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+}
+.banner_info_image .banner_img_1 {
+  transition: all 2.5s ease-out;
+  will-change: transform;
+  /* margin-right: -140px; */
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(3.9972deg)
+    rotateY(-25.9972deg) rotateZ(11.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+  z-index: 30;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: 4em;
+  left: -25%;
+  border-radius: 20px;
+}
+
+.banner_info_image .banner_img_2 {
+  will-change: transform;
+  /* margin-right: -140px; */
+  /* margin-bottom: 80px; */
+  transition: all 2.5s ease-out;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 0.9) rotateX(3.9972deg)
+    rotateY(-25.9972deg) rotateZ(11.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+  z-index: 20;
+  width: 85%;
+  opacity: 0.74;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: -1%;
+  bottom: 0%;
+  left: 15%;
+  right: 0%;
+  will-change: transform;
+  /* margin-right: -140px; */
+  /* margin-bottom: 80px; */
+  transition: all 2.5s ease-out;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(3.9972deg)
+    rotateY(-25.9972deg) rotateZ(11.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+  z-index: 20;
+  width: 100%;
+  opacity: 0.74;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  bottom: 0%;
+  left: 15%;
+  right: 0%;
+}
+.banner_info_image .banner_img_3 {
+  will-change: transform;
+  transform: translate3d(9px, -26px, 0px) scale3d(1, 1, 1) rotateX(11.9972deg)
+    rotateY(-20.9972deg) rotateZ(14.9972deg) skew(-5deg, 0deg);
+  transform-style: preserve-3d;
+  z-index: 10;
+  width: 79%;
+  opacity: 0.65;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 40%;
+  bottom: 0%;
+  left: 58%;
+  right: 0%;
+  transition: all 2.5s ease-out;
+}
+
+.gradient-hero {
+  z-index: 0;
+  height: 92em;
+  mix-blend-mode: darken;
+  background-color: #f8f7f3;
+  background-image: url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448f42142284b28cc3837b6_BetterAI-gradient-C.jpg"),
+    url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448ee67738b3e3ec215b578_gradient_1.jpg");
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: scroll, scroll;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+@media (max-width: 768px) {
+  .banner_info_image {
+    right: 0px;
+  }
+}
